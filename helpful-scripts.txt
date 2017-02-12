@@ -1,0 +1,23 @@
+###########################################
+############   docker    ##################
+###########################################
+
+// init a new django project with docker
+docker-compose run web django-admin.py startproject tutorial .
+
+// init a new app in the project
+docker-compose run web python manage.py startapp app
+
+
+###########################################
+###########  python #######################
+###########################################
+
+// create a migration
+python manage.py makemigrations snippets
+python manage.py migrate
+
+// create a superuser
+python manage.py createsuperuser
+
+https://howchoo.com/g/y2y1mtkznda/getting-started-with-docker-compose-and-django
