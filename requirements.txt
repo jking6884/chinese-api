@@ -1,7 +1,8 @@
 Django
 djangorestframework
+django-cors-headers
+djangorestframework-jsonapi==2.1.0
 psycopg2
-pygments
 httpie
 coreapi
 coreapi-cli
